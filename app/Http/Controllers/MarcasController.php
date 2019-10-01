@@ -7,6 +7,21 @@ use Illuminate\Http\Request;
 class MarcasController extends Controller
 {
   public function inicio($marca, $provincia){
+    $marcas = [
+      "lg" => "LG",
+      "bosch" => "Bosch",
+      "balay" => "Balay",
+      "samsung" => "Samsung",
+      "haier" => "Haier",
+      "daewoo" => "Daewoo",
+      "liebherr" => "Liebherr",
+      "junkers" => "Junkers",
+      "miele" => "Miele",
+      "siemens" => "Siemens",
+      "beko" => "Beko",
+      "fagor" => "Fagor",
+      "edesa" => "Edesa"
+    ];
     $provinciasTelefonosEspaciados = [
         "madrid" => "910 916 449",
         "sevilla" => "955 300 649",
@@ -37,7 +52,21 @@ class MarcasController extends Controller
         "navarra" => "Navarra",
         "valladolid" => "Valladolid"
     ];
+    $marca = strtolower($marca);
     $provincia = strtolower($provincia);
-    return view("paginaPrincipal", compact("marca", "provincia", "provinciasTelefonos", "provinciasNombres", "provinciasTelefonosEspaciados"));
+    if(array_key_exists($marca, $marcas) and
+    array_key_exists($provincia, $provinciasTelefonos)){
+
+      $telefonoSeparado = $provinciasTelefonosEspaciados[$provincia];
+      $telefono = $provinciasTelefonos[$provincia];
+      $provincia = $provinciasNombres[$provincia];
+      $nombreMarca = $marcas[$marca];
+
+      return view("paginaPrincipal", compact("marca", "nombreMarca", "provincia", "telefono", "telefonoSeparado"));
+    }else{
+      return view("404");
+    }
+
+
   }
 }

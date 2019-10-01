@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 html, body, html * {
   font-family: 'Roboto', sans-serif;
-  font-weight:bold;
+  font-weight: normal;
 }
 .imagenElectrodomestico {
   height: 250px;
@@ -16,15 +16,11 @@ html, body, html * {
 h3{
   font-size: large;
 }
-.telefono{
-/*  font-size:
-  font-weight: bolder;*/
-}
 body {
   padding-top: 70px;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .imagenElectrodomestico {
     height: 200px;
   }
@@ -33,7 +29,7 @@ body {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .imagenElectrodomestico {
     height: 150px;
   }
@@ -42,20 +38,29 @@ body {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .imagenElectrodomestico {
     height: 120px;
   }
   .imagenCalidad {
     height: 250px;
   }
+  .imagenElectrodomesticoFinal {
+    height: 220px;
+  }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
+  .text-sm-center {
+    text-align: center !important;
+  }
   .imagenElectrodomestico {
     height: 100px;
   }
   .imagenCalidad {
     height: 200px;
+  }
+  .imagenElectrodomesticoFinal {
+    height: 220px;
   }
 }
