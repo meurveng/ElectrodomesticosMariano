@@ -33,9 +33,9 @@
     <div class="container">
       <div class="row justify-content-around">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-6 text-center">
-          <p class="display-3 col-12 border-top border-bottom border-primary">
+          <p class="display-4 col-12 border-top border-bottom border-primary p-0">
             <a href="tel:+34{{$telefono}}">{{$telefonoSeparado}}</a></p>
-          <h1 class="display-3 border-top border-bottom border-primary text-primary">{{$provincia}}</h1>
+          <h1 class="display-4 border-top border-bottom border-primary text-primary">{{$provincia}}</h1>
         </div>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-5 text-center text-lg-left text-xl-left">
           <p class="encabezado">Llame al teléfono de Averias y le daremos cita con el técnico más cercano a su ubicación</p>
