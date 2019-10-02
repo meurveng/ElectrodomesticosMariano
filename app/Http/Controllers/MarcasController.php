@@ -60,9 +60,9 @@ class MarcasController extends Controller
       $telefonoSeparado = $provinciasTelefonosEspaciados[$provincia];
       $telefono = $provinciasTelefonos[$provincia];
       $provincia = $provinciasNombres[$provincia];
-      $nombreMarca = $marcas[$marca];
+      $marca = $marcas[$marca];
 
-      return view("paginaPrincipal", compact("marca", "nombreMarca", "provincia", "telefono", "telefonoSeparado"));
+      return view("paginaPrincipal", compact("marca", "provincia", "telefono", "telefonoSeparado"));
     }else{
       return view("404");
     }

@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Servicio Técnico {{$nombreMarca}}</title>
+        <title>Servicio Técnico {{$marca}}</title>
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
         <link href='http://fonts.googleapis.com/css?family=Roboto'
           rel='stylesheet' type='text/css'>
@@ -17,7 +17,7 @@
 @section("nav")
   <span class="navbar-brand" href="#">
     <img src="{{asset('images/icon.png')}}" width="30" height="30" alt="">
-    Servicio Técnico {{$nombreMarca}}
+    Servicio Técnico {{$marca}}
   </span>
   <span class="navbar-text">
     <a href="tel:+34{{$telefono}}">
@@ -27,7 +27,7 @@
 <main>
   <div class="container">
     <img src="{{asset('images/logo'.$marca.'.jpg')}}"
-    class="img-fluid rounded mx-auto d-block" alt="Logo {{$nombreMarca}}"/>
+    class="img-fluid rounded mx-auto d-block" alt="Logo {{$marca}}"/>
   </div>
   <section class="bg-light py-5">
     <div class="container">
@@ -51,8 +51,8 @@
   </section>
   <section class="py-5 bg-dark text-light">
     <div class="container">
-      <h1 class="text-center">Servicio técnico {{$nombreMarca}}</h1>
-      <p class="encabezado">Reparamos su electrodoméstico {{$nombreMarca}} con la mayor rapidez y
+      <h1 class="text-center">Servicio técnico {{$marca}}</h1>
+      <p class="encabezado">Reparamos su electrodoméstico {{$marca}} con la mayor rapidez y
         garantizamos nuestras reparaciones.</p>
     </div>
   </section>
@@ -60,13 +60,13 @@
     <p class="text-justify">Desde hace muchos años nos hemos convertido en una
       de las empresas más recomendadas por los clientes en lo que se refiere a
       los servicios de <span class="font-weight-bold">reparación de
-      electrodomésticos {{$nombreMarca}}</span>.</p>
+      electrodomésticos {{$marca}}</span>.</p>
 
     <p class="text-justify">La profesionalidad y eficacia de nuestros técnicos
       especializados, son sinónimo de una reparación lo más rápida posible y
       minuciosa, para que usted no tenga que preocuparse de nada. Nuestra
       empresa cuenta con más de 25 años de experiencia, ofreciendo siempre las
-      máximas garantías en la reparación de sus electrodomésticos {{$nombreMarca}}.</p>
+      máximas garantías en la reparación de sus electrodomésticos {{$marca}}.</p>
 
     <p class="text-justify">La confianza que nuestros clientes han depositado en
       nosotros es una gran razón para que estemos orgullosos y al mismo tiempo
