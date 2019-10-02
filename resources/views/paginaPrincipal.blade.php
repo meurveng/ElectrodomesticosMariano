@@ -3,7 +3,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <meta name="viewport" content="width=device-width, user-scalable=0">
 
         <title>Servicio Técnico {{$marca}}</title>
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
@@ -32,12 +32,12 @@
   <section class="bg-light py-5">
     <div class="container">
       <div class="row justify-content-around">
-        <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center">
-          <p class="display-3 col-xs-12 border-top border-bottom border-primary">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+          <p class="display-3 col-12 border-top border-bottom border-primary">
             <a href="tel:+34{{$telefono}}">{{$telefonoSeparado}}</a></p>
           <h1 class="display-3 border-top border-bottom border-primary text-primary">{{$provincia}}</h1>
         </div>
-        <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-5 text-center text-lg-left text-xl-left">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-5 text-center text-lg-left text-xl-left">
           <p class="encabezado">Llame al teléfono de Averias y le daremos cita con el técnico más cercano a su ubicación</p>
           <p class="encabezado">Cita al instante en el momento de la llamada</p>
         </div>
@@ -71,42 +71,42 @@
   <section class="container py-3">
     <h2 class="text-center pb-5">Electrodomésticos</h2>
     <div class="row">
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/lavavajillas.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Lavavajillas"/>
         <h3 class="text-center pt-2">Lavavajillas</h3>
       </div>
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/frigorifico.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="frigorifico"/>
         <h3 class="text-center pt-2">Frigoríficos</h3>
       </div>
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/lavadora.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Lavadora"/>
         <h3 class="text-center pt-2">Lavadoras</h3>
       </div>
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/secadora.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Secadora"/>
         <h3 class="text-center pt-2">Secadoras</h3>
       </div>
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/congelador.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Congelador"/>
         <h3 class="text-center pt-2">Congeladores</h3>
       </div>
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/aireacondicionado.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Aire Acondicionado Split"/>
         <h3 class="text-center pt-2">Aire Acondicionado (Split y portátiles)</h3>
       </div>
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/termo.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Termo"/>
         <h3 class="text-center pt-2">Termos, Calentadores, Acumuladores</h3>
       </div>
-      <div class="col col-3">
+      <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/horno.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Horno"/>
         <h3 class="text-center pt-2">Hornos</h3>
@@ -117,7 +117,7 @@
   <section class="container py-4">
     <div>
       <div class="row">
-        <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-4 bootstrap-gutter">
+        <div class="col col-12 col-sm-6 col-md-4 col-lg-4 bootstrap-gutter">
           <img src="{{asset('images/precio.png')}}"
             class="mx-auto d-block rounded img-fluid imagenCalidad" alt="Buen precio"/>
 
@@ -126,7 +126,7 @@
             a otros servicios técnicos de la zona a la ver que conservamos una
             excelente calidad.</p>
         </div>
-        <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-4 bootstrap-gutter">
+        <div class="col col-12 col-sm-6 col-md-4 col-lg-4 bootstrap-gutter">
           <img src="{{asset('images/conocimiento.jpg')}}"
             class="mx-auto d-block rounded img-fluid imagenCalidad" alt="Altos conocimientos"/>
           <h2 class="text-center">Gran conocimiento</h2>
@@ -134,7 +134,7 @@
             experimentados del sector con mas de 25 años de experiencia. Siempre
             en constante formación.</p>
         </div>
-        <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 bootstrap-gutter">
+        <div class="col col-12 col-sm-12 col-md-4 col-lg-4 bootstrap-gutter">
           <img src="{{asset('images/confianza.png')}}"
             class="mx-auto d-block rounded img-fluid imagenCalidad" alt="Excelente calidad"/>
           <h2 class="text-center">Excelente calidad</h2>
@@ -148,7 +148,7 @@
   <hr/>
   <section class="container">
     <div class="row py-4">
-      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 bootstrap-gutter">
+      <div class="col-12 col-sm-5 col-md-5 col-lg-5 bootstrap-gutter">
         <img src="{{asset('images/experiencia.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomesticoFinal" alt="Experiencia inmejorable"/>
       </div>
@@ -162,7 +162,7 @@
       </div>
     </div>
     <div class="row py-4">
-      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 bootstrap-gutter">
+      <div class="col-12 col-sm-5 col-md-5 col-lg-5 bootstrap-gutter">
         <img src="{{asset('images/furgoneta.jpg')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomesticoFinal" alt="Desplazamiento gratis"/>
       </div>
@@ -172,7 +172,7 @@
       </div>
     </div>
     <div class="row py-4">
-      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 bootstrap-gutter">
+      <div class="col-12 col-sm-5 col-md-5 col-lg-5 bootstrap-gutter">
         <img src="{{asset('images/repuestosoriginales.png')}}"
           class="mx-auto d-block rounded img-fluid imagenElectrodomesticoFinal" alt="Repuestos originales"/>
       </div>
