@@ -35,15 +35,10 @@
         <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center">
           <p class="display-3 col-xs-12 border-top border-bottom border-primary">
             <a href="tel:+34{{$telefono}}">{{$telefonoSeparado}}</a></p>
-          <h1 class="display-3 border-top border-bottom border-primary text-primary">Teléfono</h1>
+          <h1 class="display-3 border-top border-bottom border-primary text-primary">{{$provincia}}</h1>
         </div>
         <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-5 text-center text-lg-left text-xl-left">
-          <p class="mb-0 pb-0 encabezado ">Desplazamiento gratis</p>
-          <p class="mt-0 pt-0"><small>Si se realiza la reparación</small></p>
-
-          <p class="mb-0 pb-0 encabezado">Atendemos en todo {{$provincia}}</p>
-          <p class="mt-0 pt-0"><small>Le enviamos el técnico mas
-            cercano a su zona</small></p>
+          <p class="encabezado">Llame al teléfono de Averias y le daremos cita con el técnico más cercano a su ubicación</p>
           <p class="encabezado">Cita al instante en el momento de la llamada</p>
         </div>
       </div>
@@ -164,6 +159,16 @@
           lo tanto, es capaz de satisfacer todas sus necesidades en cuanto a la
           instalación y reparación de este tipo de dispositivos para hacer su
           vida más fácil.</p>
+      </div>
+    </div>
+    <div class="row py-4">
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 bootstrap-gutter">
+        <img src="{{asset('images/furgoneta.jpg')}}"
+          class="mx-auto d-block rounded img-fluid imagenElectrodomesticoFinal" alt="Desplazamiento gratis"/>
+      </div>
+      <div class="col">
+        <h2 class="text-center text-sm-left text-md-left text-lg-left text-xl-left">Desplazamiento gratuito</h2>
+        <p class="text-justify">Si se realiza la reparación.</p>
       </div>
     </div>
     <div class="row py-4">
