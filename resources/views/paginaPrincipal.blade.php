@@ -4,12 +4,12 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=0">
-
-        <title>Servicio Técnico {{$marca}}</title>
+        <title>SAT {{$marca}}</title>
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
         <link href='http://fonts.googleapis.com/css?family=Roboto'
           rel='stylesheet' type='text/css'>
         <link href="{{asset('css/paginaPrincipal.css')}}" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="{{asset('images/icon.png')}}" />
 
 
   </head>
