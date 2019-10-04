@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=0">
         <title>SAT {{$marca}}</title>
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto'
           rel='stylesheet' type='text/css'>
         <link href="{{asset('css/paginaPrincipal.css')}}" rel="stylesheet"/>
@@ -15,13 +16,12 @@
   </head>
   <body>
 @section("nav")
-  <span class="navbar-brand" href="#">
+  <span class="navbar-brand navbar-center col col-12 col-md-6 col-lg-6 text-center text-md-left text-lg-left text-xl-left" href="#">
     <img src="{{asset('images/icon.png')}}" width="30" height="30" alt="">
     Servicio Técnico {{$marca}}
   </span>
-  <span class="navbar-text">
-    <a href="tel:+34{{$telefono}}">
-      Llama al {{$telefonoSeparado}}</a>
+  <span class="navbar-text col col-12 col-md-4 col-lg-4 text-center text-md-right text-lg-right text-xl-right">
+    <a href="tel:+34{{$telefono}}"> Llama al <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{$telefonoSeparado}}</a>
   </span>
 @endsection
 <main>
@@ -31,27 +31,34 @@
   </div>
   <section class="bg-light py-5">
     <div class="container">
-      <div class="row justify-content-around">
+      <div class="row justify-content-around ">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-6 text-center">
-          <p class="display-4 col-12 border-top border-bottom border-primary p-0">
-            <a href="tel:+34{{$telefono}}">{{$telefonoSeparado}}</a></p>
-          <h1 class="display-4 border-top border-bottom border-primary text-primary">{{$provincia}}</h1>
+          <p class="col-12 border-top border-bottom
+            border-primary py-2">
+            <a id="telefonoPrincipal" href="tel:+34{{$telefono}}"><span
+              class="glyphicon glyphicon-earphone" aria-hidden="true">
+            </span> {{$telefonoSeparado}}</a>
+          </p>
+          <p id="provinciaPrincipal" class="border-top border-bottom border-primary
+            text-primary">{{$provincia}}</p>
         </div>
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-5 text-center text-lg-left text-xl-left">
-          <p class="encabezado">Llame al teléfono de Averias y le daremos cita con el técnico más cercano a su ubicación</p>
-          <p class="encabezado">Cita al instante en el momento de la llamada</p>
+        <div class="col col-12 col-lg-5 text-center
+          text-lg-left text-xl-left">
+          <p class="encabezado text-justify">Llame al teléfono de Averias y le daremos cita
+            con el técnico más cercano a su ubicación</p>
+          <p class="encabezado text-justify">Cita al instante en el momento de la llamada</p>
         </div>
       </div>
     </div>
   </section>
   <section class="py-5 bg-dark text-light">
     <div class="container">
-      <h1 class="text-center">Servicio técnico {{$marca}}</h1>
-      <p class="encabezado">Reparamos su electrodoméstico {{$marca}} con la mayor rapidez y
-        garantizamos nuestras reparaciones.</p>
+      <h1 id="servicioTecnico" class="text-center">Servicio técnico {{$marca}}</h1>
+      <p id="textoPrincipal" class="text-jusfity">Reparamos su electrodoméstico
+        {{$marca}} con la mayor rapidez y garantizamos nuestras reparaciones.</p>
     </div>
   </section>
-  <section class="container py-5">
+  <section id="descripcion" class="container py-5">
     <p class="text-justify">Desde hace muchos años nos hemos convertido en una
       de las empresas más recomendadas por los clientes en lo que se refiere a
       los servicios de <span class="font-weight-bold">reparación de
@@ -73,17 +80,20 @@
     <div class="row">
       <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/lavavajillas.jpg')}}"
-          class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Lavavajillas"/>
+          class="mx-auto d-block rounded img-fluid imagenElectrodomestico"
+            alt="Lavavajillas"/>
         <h3 class="text-center pt-2">Lavavajillas</h3>
       </div>
       <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/frigorifico.jpg')}}"
-          class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="frigorifico"/>
+          class="mx-auto d-block rounded img-fluid imagenElectrodomestico"
+            alt="frigorifico"/>
         <h3 class="text-center pt-2">Frigoríficos</h3>
       </div>
       <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
         <img src="{{asset('images/lavadora.jpg')}}"
-          class="mx-auto d-block rounded img-fluid imagenElectrodomestico" alt="Lavadora"/>
+          class="mx-auto d-block rounded img-fluid imagenElectrodomestico"
+            alt="Lavadora"/>
         <h3 class="text-center pt-2">Lavadoras</h3>
       </div>
       <div class="col col-6 col-sm-4 col-md-3 col-lg-3">
@@ -121,7 +131,7 @@
           <img src="{{asset('images/precio.png')}}"
             class="mx-auto d-block rounded img-fluid imagenCalidad" alt="Buen precio"/>
 
-          <h2 class="text-center">Precio inmejorable</h2>
+          <h2 class="tituloSeccion text-center py-2">Precio inmejorable</h2>
           <p class="text-justify">Tenemos un exceltente precio en comparación
             a otros servicios técnicos de la zona a la ver que conservamos una
             excelente calidad.</p>
@@ -129,15 +139,15 @@
         <div class="col col-12 col-sm-6 col-md-4 col-lg-4 bootstrap-gutter">
           <img src="{{asset('images/conocimiento.jpg')}}"
             class="mx-auto d-block rounded img-fluid imagenCalidad" alt="Altos conocimientos"/>
-          <h2 class="text-center">Gran conocimiento</h2>
+          <h2 class="tituloSeccion text-center py-2">Gran conocimiento</h2>
           <p class="text-justify">Contamos con uno de los equipos humanos más
             experimentados del sector con mas de 25 años de experiencia. Siempre
             en constante formación.</p>
         </div>
-        <div class="col col-12 col-sm-12 col-md-4 col-lg-4 bootstrap-gutter">
+        <div class="col col-12 col-md-4 col-lg-4 bootstrap-gutter">
           <img src="{{asset('images/confianza.png')}}"
             class="mx-auto d-block rounded img-fluid imagenCalidad" alt="Excelente calidad"/>
-          <h2 class="text-center">Excelente calidad</h2>
+          <h2 class="tituloSeccion text-center py-2">Excelente calidad</h2>
           <p class="text-justify">Somos muy exigentes en ofrecerle una gran
             calidad hasta en el mas mínimo detalle. Nuestro trabajo es nuestra
             satisfacción.</p>
@@ -153,7 +163,7 @@
           class="mx-auto d-block rounded img-fluid imagenElectrodomesticoFinal" alt="Experiencia inmejorable"/>
       </div>
       <div class="col">
-        <h2 class="text-center text-sm-left text-md-left text-lg-left text-xl-left">Experiencia</h2>
+        <h2 class="tituloSeccion text-center text-sm-left text-md-left text-lg-left text-xl-left">Experiencia</h2>
         <p class="text-justify">Con muchos años de experiencia en su campo, la
           empresa está familiarizada con todo tipo de electrodomésticos y, por
           lo tanto, es capaz de satisfacer todas sus necesidades en cuanto a la
@@ -167,7 +177,7 @@
           class="mx-auto d-block rounded img-fluid imagenElectrodomesticoFinal" alt="Desplazamiento gratis"/>
       </div>
       <div class="col">
-        <h2 class="text-center text-sm-left text-md-left text-lg-left text-xl-left">Desplazamiento gratuito</h2>
+        <h2 class="tituloSeccion text-center text-sm-left text-md-left text-lg-left text-xl-left">Desplazamiento gratuito</h2>
         <p class="text-justify">Si se realiza la reparación.</p>
       </div>
     </div>
@@ -177,7 +187,7 @@
           class="mx-auto d-block rounded img-fluid imagenElectrodomesticoFinal" alt="Repuestos originales"/>
       </div>
       <div class="col">
-        <h2 class="text-center text-sm-left text-md-left text-lg-left text-xl-left">Repuestos originales</h2>
+        <h2 class="tituloSeccion text-center text-sm-left text-md-left text-lg-left text-xl-left">Repuestos originales</h2>
         <p class="text-justify">Todas las reparaciones son con repuestos
           originales de la marca.</p>
       </div>
