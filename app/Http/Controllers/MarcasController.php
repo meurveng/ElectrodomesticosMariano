@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class MarcasController extends Controller
 {
+  public function email(){
+  }
   public function inicio($marca, $provincia){
     $marcas = [
       "lg" => "LG",
@@ -23,6 +25,7 @@ class MarcasController extends Controller
       "edesa" => "Edesa"
     ];
     $provinciasTelefonosEspaciados = [
+        "toledo" => "925 080 549",
         "mallorca" => "871 100 449",
         "madrid" => "910 916 449",
         "sevilla" => "955 300 649",
@@ -34,6 +37,7 @@ class MarcasController extends Controller
         "valladolid" => "983 120 149"
     ];
     $provinciasTelefonos = [
+        "toledo" => "925080549",
         "mallorca" => "871100449",
         "madrid" => "910916449",
         "sevilla" => "955300649",
@@ -45,6 +49,7 @@ class MarcasController extends Controller
         "valladolid" => "983120149"
     ];
     $provinciasNombres = [
+        "toledo" => "Toledo",
         "mallorca" => "Mallorca",
         "madrid" => "Madrid",
         "sevilla" => "Sevilla",
