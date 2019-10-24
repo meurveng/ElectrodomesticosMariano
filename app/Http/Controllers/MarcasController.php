@@ -21,6 +21,7 @@ class MarcasController extends Controller
       "miele" => "Miele",
       "siemens" => "Siemens",
       "beko" => "Beko",
+      "candy" => "Candy",
       "fagor" => "Fagor",
       "edesa" => "Edesa"
     ];
