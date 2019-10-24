@@ -17,64 +17,53 @@
   <body>
 @section("nav")
   <span class="navbar-brand navbar-center col col-12 col-md-6 col-lg-6 text-center text-md-left text-lg-left text-xl-left" href="#">
-    <img src="{{asset('images/icon.png')}}" width="30" height="30" alt="">
-    Servicio Técnico {{$marca}}
+    <img src="{{asset('images/logo'.$marca.'.png')}}" width="150" alt="">
+    </span>
   </span>
-  <span class="navbar-text col col-12 col-md-4 col-lg-4 text-center text-md-right text-lg-right text-xl-right">
-    <a href="tel:+34{{$telefono}}"> Llama al <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{$telefonoSeparado}}</a>
+  <span class="text-danger navbar-text col col-12 col-md-5 col-lg-5 text-center text-md-right text-lg-right text-xl-right">
+    Servicio técnico {{$marca}} en <span class="text-primary">{{strtoupper($provincia)}} <br/>
+    <a id="telefonoNav" href="tel:+34{{$telefono}}"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{$telefonoSeparado}}</a>
   </span>
 @endsection
 <main>
-  <div class="container">
-    <img src="{{asset('images/logo'.$marca.'.jpg')}}"
-    class="img-fluid rounded mx-auto d-block" alt="Logo {{$marca}}"/>
-  </div>
-  <section class="bg-light py-5">
+  <section class="bg-info py-5">
     <div class="container">
-      <div class="row justify-content-around ">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-6 text-center">
-          <p class="col-12 border-top border-bottom
-            border-primary py-2">
-            <a id="telefonoPrincipal" href="tel:+34{{$telefono}}"><span
-              class="glyphicon glyphicon-earphone" aria-hidden="true">
-            </span> {{$telefonoSeparado}}</a>
-          </p>
-          <p id="provinciaPrincipal" class="border-top border-bottom border-primary
-            text-primary">{{$provincia}}</p>
+      <div class="row justify-content-around">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-9 text-center py-5">
+          <img class="img-fluid rounded" src="{{asset('images/cocina2.jpg')}}" alt=""/>
         </div>
-        <div class="col col-12 col-lg-5 text-center
-          text-lg-left text-xl-left">
-          <p class="encabezado text-justify">Llame al teléfono de Averias y le daremos cita
+        <div class="col col-12 col-lg-3 text-center text-lg-left text-xl-left">
+          <p class="encabezado text-justify py-0"><span class="resaltado">Llame al teléfono de Averias</span> y le daremos cita
             con el técnico más cercano a su ubicación</p>
-          <p class="encabezado text-justify">Cita al instante en el momento de la llamada</p>
+          <hr/>
+          <p class="encabezado text-justify">Servicio de urgencia sin pagar más. <span class="resaltado">Reparación el mismo día</span> sin ningún coste adicional.</p>
+          <hr/>
+          <p class="encabezado text-justify"><span class="resaltado">Garantía</span> de todas nuestras reparaciones.</p>
+          <hr/>
+          <p class="encabezado text-justify"><span class="resaltado">Cita al instante</span> en el momento de la llamada</p>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 py-3">
+          <div class="card bg-danger text-white">
+            <img class="card-img-top" src="{{asset('images/tecnico1.jpg')}}" alt="Card image">
+            <div class="card-body">
+              <h3 class="card-title text-center">Reparación en el mismo día sin cargo.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 py-3">
+          <div class="card bg-danger text-white">
+            <img class="card-img-top" src="{{asset('images/tecnico2.jpg')}}" alt="Card image">
+            <div class="card-body">
+              <h3 class="card-title text-center">Técnicos cualificados para cada electrodoméstico.</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="py-5 bg-dark text-light">
-    <div class="container">
-      <h1 id="servicioTecnico" class="text-center">Servicio técnico {{$marca}}</h1>
-      <p id="textoPrincipal" class="text-jusfity">Reparamos su electrodoméstico
-        {{$marca}} con la mayor rapidez y garantizamos nuestras reparaciones.</p>
-    </div>
-  </section>
-  <section id="descripcion" class="container py-5">
-    <p class="text-justify">Desde hace muchos años nos hemos convertido en una
-      de las empresas más recomendadas por los clientes en lo que se refiere a
-      los servicios de <span class="font-weight-bold">reparación de
-      electrodomésticos {{$marca}}</span>.</p>
 
-    <p class="text-justify">La profesionalidad y eficacia de nuestros técnicos
-      especializados, son sinónimo de una reparación lo más rápida posible y
-      minuciosa, para que usted no tenga que preocuparse de nada. Nuestra
-      empresa cuenta con más de 25 años de experiencia, ofreciendo siempre las
-      máximas garantías en la reparación de sus electrodomésticos {{$marca}}.</p>
-
-    <p class="text-justify">La confianza que nuestros clientes han depositado en
-      nosotros es una gran razón para que estemos orgullosos y al mismo tiempo
-      un estímulo para el desarrollo continuo.</p>
-  </section>
-  <hr/>
   <section class="container py-3">
     <h2 class="text-center pb-5">Electrodomésticos</h2>
     <div class="row">
@@ -123,6 +112,30 @@
       </div>
     </div>
   </section>
+  <section class="py-5 bg-dark text-light">
+    <div class="container">
+      <h1 id="servicioTecnico" class="text-center">Servicio técnico {{$marca}}</h1>
+      <p id="textoPrincipal" class="text-jusfity">Reparamos su electrodoméstico
+        {{$marca}} con la mayor rapidez y garantizamos nuestras reparaciones.</p>
+    </div>
+  </section>
+  <section id="descripcion" class="container py-5">
+    <p class="text-justify">Desde hace muchos años nos hemos convertido en una
+      de las empresas más recomendadas por los clientes en lo que se refiere a
+      los servicios de <span class="font-weight-bold">reparación de
+      electrodomésticos {{$marca}}</span>.</p>
+
+    <p class="text-justify">La profesionalidad y eficacia de nuestros técnicos
+      especializados, son sinónimo de una reparación lo más rápida posible y
+      minuciosa, para que usted no tenga que preocuparse de nada. Nuestra
+      empresa cuenta con más de 25 años de experiencia, ofreciendo siempre las
+      máximas garantías en la reparación de sus electrodomésticos {{$marca}}.</p>
+
+    <p class="text-justify">La confianza que nuestros clientes han depositado en
+      nosotros es una gran razón para que estemos orgullosos y al mismo tiempo
+      un estímulo para el desarrollo continuo.</p>
+  </section>
+  <hr/>
   <hr/>
   <section class="container py-4">
     <div>

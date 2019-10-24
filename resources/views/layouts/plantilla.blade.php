@@ -1,12 +1,12 @@
 
 <header>
-  <nav class="navbar fixed-top navbar-dark bg-primary py-4 row">
+  <nav class="navbar bg-white fixed-top py-4 row">
     @yield("nav")
   </nav>
 </header>
 <footer class="bg-dark">
   <div class="container text-light">
-    <div class="row py-5">
+    <div class="row py-3">
       <div class="col col-12 col-sm-12 col-md-6 col-lg-6 bootstrap-gutter">
         <h2 class="text-center">Contacto</h2>
         <ul>
