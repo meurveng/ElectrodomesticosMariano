@@ -35,6 +35,7 @@ class MarcasController extends Controller
         "gran_canaria" => "928 402 549",
         "barcelona" => "931 005 449",
         "navarra" => "848 400 149",
+        "valencia" => "960 001 949",
         "valladolid" => "983 120 149"
     ];
     $provinciasTelefonos = [
@@ -47,6 +48,7 @@ class MarcasController extends Controller
         "gran_canaria" => "928402549",
         "barcelona" => "931005449",
         "navarra" => "848400149",
+        "valencia" => "960001949",
         "valladolid" => "983120149"
     ];
     $provinciasNombres = [
@@ -59,6 +61,7 @@ class MarcasController extends Controller
         "gran_canaria" => "Gran Canaria",
         "barcelona" => "Barcelona",
         "navarra" => "Navarra",
+        "valencia" => "Valencia",
         "valladolid" => "Valladolid"
     ];
     $marca = strtolower($marca);
