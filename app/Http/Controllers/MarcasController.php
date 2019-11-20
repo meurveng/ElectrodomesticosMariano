@@ -6,9 +6,7 @@ use Illuminate\Http\Request;
 
 class MarcasController extends Controller
 {
-  public function email(){
-  }
-  public function inicio($marca, $provincia){
+  public function inicio($marca, $provincia, $tipo = null){
     $marcas = [
       "lg" => "LG",
       "bosch" => "Bosch",
@@ -23,7 +21,16 @@ class MarcasController extends Controller
       "beko" => "Beko",
       "candy" => "Candy",
       "fagor" => "Fagor",
-      "edesa" => "Edesa"
+      "edesa" => "Edesa",
+      "carrier" => "Carrier",
+      "daikin" => "Daikin",
+      "panasonic" => "Panasonic",
+      "mitsubishi" => "Mitsubishi",
+      "fujitsu" => "Fujitsu",
+      "daitsu" => "Daitsu",
+      "hiyasu" => "Hiyasu",
+      "toshiba" => "Toshiba",
+      "sharp" => "Sharp"
     ];
     $provinciasTelefonosEspaciados = [
         "toledo" => "925 080 549",
@@ -67,19 +74,7 @@ class MarcasController extends Controller
     $marca = strtolower($marca);
     $provincia = strtolower($provincia);
 
-    // Si la provincia es "aireacondicionado" enviamos a la página de aire
-    // acondionado de Mallorca
-    if(($provincia == "aireacondicionado") and
-      array_key_exists($marca, $marcas)){
-      $provincia = "mallorca";
-      $telefonoSeparado = $provinciasTelefonosEspaciados[$provincia];
-      $telefono = $provinciasTelefonos[$provincia];
-      $provincia = $provinciasNombres[$provincia];
-      $marca = $marcas[$marca];
-
-      return view("paginaPrincipalAA", compact("marca", "provincia", "telefono", "telefonoSeparado"));
-
-    }elseif(array_key_exists($marca, $marcas) and
+    if(array_key_exists($marca, $marcas) and
       array_key_exists($provincia, $provinciasTelefonos)){
 
       $telefonoSeparado = $provinciasTelefonosEspaciados[$provincia];
@@ -87,7 +82,14 @@ class MarcasController extends Controller
       $provincia = $provinciasNombres[$provincia];
       $marca = $marcas[$marca];
 
-      return view("paginaPrincipal", compact("marca", "provincia", "telefono", "telefonoSeparado"));
+      if($tipo == "aireacondicionado"){
+        return view("paginaPrincipalAA", compact("marca", "provincia", "telefono", "telefonoSeparado"));
+      }
+      else{
+        return view("paginaPrincipal", compact("marca", "provincia", "telefono", "telefonoSeparado"));
+      }
+
+
     }else{
       return view("404");
     }

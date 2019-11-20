@@ -14,4 +14,5 @@
 Route::view('/', '404');
 Route::view('/aviso-legal', 'avisoLegal');
 Route::view('/{marca}', '404');
+Route::get('/{marca}/{provincia}/{tipo}', "MarcasController@inicio");
 Route::get('/{marca}/{provincia}', "MarcasController@inicio");
