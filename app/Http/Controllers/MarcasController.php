@@ -66,8 +66,21 @@ class MarcasController extends Controller
     ];
     $marca = strtolower($marca);
     $provincia = strtolower($provincia);
-    if(array_key_exists($marca, $marcas) and
-    array_key_exists($provincia, $provinciasTelefonos)){
+
+    // Si la provincia es "aireacondicionado" enviamos a la página de aire
+    // acondionado de Mallorca
+    if(($provincia == "aireacondicionado") and
+      array_key_exists($marca, $marcas)){
+      $provincia = "mallorca";
+      $telefonoSeparado = $provinciasTelefonosEspaciados[$provincia];
+      $telefono = $provinciasTelefonos[$provincia];
+      $provincia = $provinciasNombres[$provincia];
+      $marca = $marcas[$marca];
+
+      return view("paginaPrincipalAA", compact("marca", "provincia", "telefono", "telefonoSeparado"));
+
+    }elseif(array_key_exists($marca, $marcas) and
+      array_key_exists($provincia, $provinciasTelefonos)){
 
       $telefonoSeparado = $provinciasTelefonosEspaciados[$provincia];
       $telefono = $provinciasTelefonos[$provincia];
