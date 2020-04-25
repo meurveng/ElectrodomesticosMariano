@@ -44,6 +44,9 @@
         </div>
       </div>
       <div class="row justify-content-around">
+        <div class="col col-12 col-sm-12 py-3 alert alert-warning " role="alert">
+            <h3 class="text-center"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Nuestros técnicos atienden a domicilio de forma segura con guantes y mascarillas, como lo establece el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2020-3692" class="alert-link">Real Decreto 463/2020</a>.</h3>
+        </div>
         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 py-3">
           <div class="card bg-danger text-white">
             <img class="card-img-top" src="{{asset('images/tecnico1aa.jpg')}}" alt="Card image">
