@@ -1,6 +1,6 @@
 
 <header>
-  <nav class="shadow bg-white rounded navbar bg-white fixed-top py-4 row">
+  <nav class="shadow bg-white rounded navbar fixed-top py-2 row">
     @yield("nav")
   </nav>
 </header>

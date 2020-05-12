@@ -14,9 +14,16 @@ nav span{
   font-size: 2rem;
   font-weight: bold;
 }
+nav small{
+  font-size: 1.25rem;
+}
+#cardPrincipal{
+  font-size: 4rem;
+  background-color: rgba(220, 53, 69, 0.8);
+}
 #telefonoNav, #telefonoNav span{
-  font-size: 2.5rem;
-  color: #e70435;
+  font-size: 3.5rem;
+  color: #dc3545;
 }
 #telefonoPrincipal{
   font-size: 3rem;
@@ -69,7 +76,7 @@ nav span{
 
 @media (max-width: 768px) {
   body {
-    padding-top: 120px;
+    padding-top: 140px;
   }
   .imagenElectrodomestico {
     height: 120px;
@@ -84,7 +91,7 @@ nav span{
 
 @media (max-width: 576px) {
   body {
-    padding-top: 120px;
+    padding-top: 140px;
   }
   .text-sm-center {
     text-align: center !important;
