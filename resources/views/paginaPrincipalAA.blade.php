@@ -2,19 +2,37 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=0">
-        <title>SAT {{$marca}}</title>
-        <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Roboto'
-          rel='stylesheet' type='text/css'>
-        <link href="{{asset('css/paginaPrincipal.css')}}" rel="stylesheet"/>
-        <link rel="icon" type="image/png" href="{{asset('images/icon.png')}}" />
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WN35QKC');</script>
+      <!-- End Google Tag Manager -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=0">
+      <title>SAT {{$marca}}</title>
+      <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Roboto'
+        rel='stylesheet' type='text/css'>
+      <link href="{{asset('css/paginaPrincipal.css')}}" rel="stylesheet"/>
+      <link rel="icon" type="image/png" href="{{asset('images/icon.png')}}" />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166717641-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-
+        gtag('config', 'UA-166717641-1');
+      </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN35QKC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 @section("nav")
   <p class="navbar-brand navbar-center col col-12 col-md-6 col-lg-6 text-center text-md-left text-lg-left text-xl-left" href="#">
     <img src="{{asset('images/logo'.$marca.'.png')}}" width="150" alt="">
