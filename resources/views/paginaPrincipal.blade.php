@@ -33,6 +33,21 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN35QKC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!-- Default Statcounter code for Servicio Atención Técnica
+    http://servicioasistenciatecnica-sat.com -->
+    <script type="text/javascript">
+    var sc_project=12323846;
+    var sc_invisible=1;
+    var sc_security="a88d41c2";
+    var sc_https=1;
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="https://statcounter.com/" target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/12323846/0/a88d41c2/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of Statcounter Code -->
 @section("nav")
   <p class="navbar-brand navbar-center col col-12 col-md-6 col-lg-6 text-center text-md-left text-lg-left text-xl-left" href="#">
     <img src="{{asset('images/logo'.$marca.'.png')}}" width="150" alt="">
