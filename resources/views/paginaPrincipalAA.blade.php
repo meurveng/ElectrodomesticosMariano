@@ -14,7 +14,7 @@
       <title>SAT {{$marca}}</title>
       <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
       <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-      <link href='http://fonts.googleapis.com/css?family=Roboto'
+      <link href='https://fonts.googleapis.com/css?family=Roboto'
         rel='stylesheet' type='text/css'>
       <link href="{{asset('css/paginaPrincipal.css')}}" rel="stylesheet"/>
       <link rel="icon" type="image/png" href="{{asset('images/icon.png')}}" />
@@ -27,27 +27,16 @@
 
         gtag('config', 'UA-166717641-1');
       </script>
+      <script src="https://www.stopclics.com/stopclics.js?atv9xxv2iytcj7fuxb1z"></script>
+      <noscript>
+         <iframe src="https://www.stopclics.com/admin/EstadisticasST/NoJavascript/atv9xxv2iytcj7fuxb1z" width="0" height="0"></iframe>
+      </noscript>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN35QKC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- Default Statcounter code for Servicio Atención Técnica
-    http://servicioasistenciatecnica-sat.com -->
-    <script type="text/javascript">
-    var sc_project=12323846;
-    var sc_invisible=1;
-    var sc_security="a88d41c2";
-    var sc_https=1;
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="site stats"
-    href="https://statcounter.com/" target="_blank"><img class="statcounter"
-    src="https://c.statcounter.com/12323846/0/a88d41c2/1/" alt="site
-    stats"></a></div></noscript>
-    <!-- End of Statcounter Code -->
 @section("nav")
   <p class="navbar-brand navbar-center col col-12 col-md-6 col-lg-6 text-center text-md-left text-lg-left text-xl-left" href="#">
     <img src="{{asset('images/logo'.$marca.'.png')}}" width="150" alt="">
