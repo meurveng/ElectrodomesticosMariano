@@ -34,7 +34,7 @@ class MarcasController extends Controller
     ];
     $provinciasTelefonosEspaciados = [
         "toledo" => "925 080 549",
-        "mallorca" => "871 100 449",
+        "mallorca" => "971 752 429",
         "madrid" => "910 916 449",
         "sevilla" => "955 300 649",
         "alicante" => "966 410 849",
@@ -48,7 +48,7 @@ class MarcasController extends Controller
     ];
     $provinciasTelefonos = [
         "toledo" => "925080549",
-        "mallorca" => "871100449",
+        "mallorca" => "971752429",
         "madrid" => "910916449",
         "sevilla" => "955300649",
         "alicante" => "966410849",
