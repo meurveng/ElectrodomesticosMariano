@@ -39,7 +39,7 @@
     <!-- End Google Tag Manager (noscript) -->
 @section("nav")
   <p class="navbar-brand navbar-center col col-12 col-md-6 col-lg-6 text-center text-md-left text-lg-left text-xl-left" href="#">
-    <img src="{{asset('images/logo'.$marca.'.png')}}" width="150" alt="">
+    <img src="{{asset('images/logo'.trim($marca).'.png')}}" width="150" alt="">
   </p>
   <p class="text-danger navbar-text col col-12 col-md-5 col-lg-5 text-center text-md-right text-lg-right text-xl-right">
     <a id="telefonoNav" href="tel:+34{{$telefono}}"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> {{$telefonoSeparado}}</a></br>
