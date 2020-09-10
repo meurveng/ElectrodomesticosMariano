@@ -51,7 +51,8 @@
     <div class="container">
       <div class="row justify-content-around">
         <div class="col col-12 col-sm-12 py-3 alert alert-danger " role="alert">
-            <h3 class="text-center">Llámenos y le daremos cita ya mismo con el técnico más cercano a su ubicación.</a>.
+            <h3 class="text-center">
+              Llámenos y le daremos cita ya mismo con el técnico más cercano a su ubicación.
             </h3>
         </div>
         <div class="col col-12 text-center py-5">
