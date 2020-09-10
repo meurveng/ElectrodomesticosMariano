@@ -50,8 +50,9 @@
   <section class="bg-light py-5">
     <div class="container">
       <div class="row justify-content-around">
-        <div class="col col-12 col-sm-12 py-3 alert alert-primary " role="alert">
-            <h3 class="text-center"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Durante la situación de emergencia del COVID-19, nuestros tecnicos siguien trabajando a domicilio con las normas de higiene reglamentarias, como lo establece el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2020-3692" class="alert-link">Real Decreto 463/2020</a>.</h3>
+        <div class="col col-12 col-sm-12 py-3 alert alert-danger " role="alert">
+            <h3 class="text-center">Llámenos y le daremos cita ya mismo con el técnico más cercano a su ubicación.</a>.
+            </h3>
         </div>
         <div class="col col-12 text-center py-5">
           <div class="card bg-white text-white">
