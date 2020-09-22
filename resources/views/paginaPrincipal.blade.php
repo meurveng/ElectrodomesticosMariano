@@ -59,7 +59,7 @@
           <div class="card bg-white text-white">
             <img class="img-fluid rounded" src="{{asset('images/cocina2.jpg')}}" alt=""/>
             <div class="card-img-overlay p-0">
-              <h1 id="cardPrincipal" class="card-title mt-0 py-5">Servicio técnico {{$marca}} en <span class="resaltado">{{strtoupper($provincia)}}</span></h1>
+              <h1 id="cardPrincipal" class="card-title mt-0 py-5">Servicio técnico <span class="resaltado">{{$marca}}</span> en {{$provincia}}</h1>
             </div>
           </div>
         </div>

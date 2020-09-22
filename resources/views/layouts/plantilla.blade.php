@@ -27,7 +27,7 @@
   </div>
   <section class="py-4 bg-light text-dark">
     <div class="container">
-        <p class="text-left">© 2019 <a href="http://www.meurweb.com">Meurweb</a> | <a href="/aviso-legal"
+        <p class="text-left">© 2019 Servicioasistenciatecnica-sat | <a href="/aviso-legal"
           class="text-dark">Aviso Legal</a></p>
     </div>
   </section>
